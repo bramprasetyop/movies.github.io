@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie XXI</title>
+    <link rel="stylesheet"  class="link" href="style.css">
+    <link  class="link" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" class="link" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <i class="fa fa-play-circle" style="font-size:39px;color:rgb(243, 9, 56)"></i>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            </div>
+            <button type="button" class="btn btn-fb">
+                <i class="fa fa-facebook pr-1"></i>
+
+            </button>
+
+            <button type="button" class="btn btn-tw">
+
+                <i class="fa fa-twitter pr-1"></i>
+
+            </button>
+            <button type="button" class="btn btn-ins">
+
+                <i class="fa fa-instagram pr-1"></i>
+
+            </button>
+        </nav>
+        <div class="block_1 hline-bottom"></div>
+
+    </div>
+    <div class="content">
+        <div class="leftContent">
+            <form id="loginForm" onsubmit="checkInputs(event)" method="post">
+                <input type="text" name="email" id="email" class="form-control" placeholder="Email">
+
+                <span id="span1"></span>
+                <br>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <button class=" btn btn-danger" type="submit">Login</button>
+            </form>
+        </div>
+        <div class="rightContent">
+            <h2>Social Network for Entertainment </h2>
+            <h5>Discover what to watch, share what you're watching with friends and fans, and get updates from your favorite
+                shows.
+            </h5>
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <a class="link" href="">Home</a>
+        <a class="link" href="">Terms</a>
+        <a class="link" href="">Privacy</a>
+        <a class="link" href="">Contact</a>
+
+
+    </div>
+
+
+    <script>
+
+        function checkInputs(event) {
+
+            event.preventDefault();
+
+            let testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i
+            let email = $('#email').val()
+
+            if (testEmail.test(email)) {
+                $('#span1').html("login success")
+
+            }
+            else {
+                $('#span1').html("email address is not valid")
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(http://www.mormontransitions.org/wp-content/uploads/2015/12/Movie-making4.jpg);
+  opacity: 0.9;
+}
+
+.header {
+  width: 100%;
+  height: 58px;
+  border-bottom: 3px solid crimson;
+  /* border: 2px solid black; */
+}
+
+.content {
+  width: 100%;
+  height: 500px;
+  margin-top: 5px;
+  /* border: 2px solid black; */
+}
+
+.footer {
+  width: 100%;
+  height: 120px;
+  margin-top: 5px;
+  /* border: 1px solid black; */
+}
+
+.leftContent {
+  width: 20%;
+  height: 400px;
+  margin-left: 40px;
+  float: left;
+  color: white;
+  /* border: 2px solid black; */
+  margin-top: 40px;
+}
+
+.rightContent {
+  width: 75%;
+  height: 500px;
+  margin-left: 5px;
+  float: left;
+  color: whitesmoke;
+  /* border: 1px solid black; */
+  text-align: center;
+  font-family: cursive;
+}
+
+.btn-fb {
+  float: right;
+  margin-right: 15px;
+  opacity: 0.9;
+}
+.btn-tw {
+  float: right;
+  margin-right: 15px;
+  opacity: 0.9;
+}
+.btn-ins {
+  float: right;
+  margin-right: 15px;
+  opacity: 0.9;
+}
+
+.link {
+  margin-left: 50px;
+  opacity: 0.5;
+  color: whitesmoke;
+}
+
+.link:hover {
+  color: red;
+  border-radius: 3px;
+  text-decoration:none;
+}
